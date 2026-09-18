@@ -5,7 +5,7 @@ int main() {
     int vitesse = 180;
     int altitude = 3000;
     int alt_inter = 35;
-    int qnh = 1015;
+    int qnh = 1017;
 
     float distance = 8.3;
 
