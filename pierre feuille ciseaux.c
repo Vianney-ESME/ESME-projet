@@ -6,7 +6,7 @@ int main() {
  int manche = 1;
  int choixJoueur;
  int choixOrdi;
- printf("=== PIERRE - FEUILLE - CISEAUX (5 Manches) ===\n");
+ printf("=== PIERRE - FEUILLE - CISEAUX - Big Bang Theory (7 Manches) ===\n");
  printf("Règles : 1 = Pierre, 2 = Feuille, 3 = Ciseaux, 4 = Lézard, 5 = Spock\n");
  while (manche <= 7 && scoreJoueur < scoreOrdi + 2 &&
            scoreOrdi < scoreJoueur + 2) {
