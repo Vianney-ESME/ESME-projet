@@ -13,7 +13,7 @@ int main()
     int choixJoueur;
     int choixOrdi;
 
-    printf("=== PIERRE, FEUILLE, CISEAUX, LEZARD, SPOCK (7 Manches / avantage decisif de 2) ===\n");
+    printf("=== PIERRE, FEUILLE, CISEAUX, LEZARD, SPOCK ===\n");
 
     while (manche <= 7
         && scoreJoueur - scoreOrdi < 2
@@ -33,7 +33,7 @@ int main()
 
             if (incorrect)
             {
-                printf("Non valide, valeurs de 1 a 5 acceptees\n");
+                printf("Choix invalide, valeurs de 1 a 5 acceptees.\n");
             }
 
         } while (incorrect);
@@ -42,7 +42,7 @@ int main()
         choixOrdi = (rand() % 5) + 1;
         printf("L'ordinateur a choisi : %d\n", choixOrdi);
 
-        // Determination du gagnant de la manche
+        // Determination du gagnant
         if (choixJoueur == choixOrdi)
         {
             printf("Egalite !\n");
@@ -68,12 +68,13 @@ int main()
         manche = manche + 1;
     }
 
-    // Bilan de la partie
+    // Appel de la procedure pour afficher le bilan
     afficher_bilan(scoreJoueur, scoreOrdi);
 
     return 0;
 }
 
+// Procedure qui affiche le bilan de la partie
 void afficher_bilan(int scoreJoueur, int scoreOrdi)
 {
     printf("=== FIN DE LA PARTIE ===\n");
